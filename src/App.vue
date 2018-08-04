@@ -1,19 +1,18 @@
 <template>
   <div id="app" class="container">
-    <img src="./assets/logo.png">
-    <h1>Hello World</h1>
+    <todo-page />
   </div>
 </template>
 
 <script>
-
+import TodoPage from './components/TodoPage';
 export default {
   name: 'app',
+  components: {
+    TodoPage,
+  },
 }
 </script>
-
 <style>
-#app {
-  text-align: center;
-}
+
 </style>
